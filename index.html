@@ -1,32 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>ActiON-Dashboard by 625alex</title>
+    <meta name="description" content="ActiON-Dashboard : SmartThings web client">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>ActiON-Dashboard</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>ActiON-Dashboard</h1>
-        <p>SmartThings web client</p>
-        <p class="view"><a href="https://github.com/625alex/ActiON-Dashboard">View the Project on GitHub <small>625alex/ActiON-Dashboard</small></a></p>
-        <ul>
-          <li><a href="https://github.com/625alex/ActiON-Dashboard/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/625alex/ActiON-Dashboard/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/625alex/ActiON-Dashboard">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/625alex/ActiON-Dashboard">View on GitHub</a>
+
+          <h1 id="project_title">ActiON-Dashboard</h1>
+          <h2 id="project_tagline">SmartThings web client</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/625alex/ActiON-Dashboard/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/625alex/ActiON-Dashboard/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a id="smartthings-action-dashboard" class="anchor" href="#smartthings-action-dashboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>SmartThings ActiON Dashboard</h1>
 
@@ -104,8 +108,7 @@
 <li>Click on the name of the app you want to install</li>
 <li>Pick location in the drop-down on top right</li>
 <li>Click "Set Location" button</li>
-<li>Follow through configuration of the SmartApp, don't forget to get through all pages if there are more than one.</li>
-<li>Don't forget to click "Done"</li>
+<li>Follow through 3 configuration steps of the SmartApp. Click "Next" button after each step and finally click "Done". Don't forget to get through all pages, don't click "Install" button too soon.</li>
 </ol>
 
 <p>To obtain the URL of your ActiON Dashboard</p>
@@ -129,13 +132,32 @@
 <li>If you don’t want to expose the access_token, you can omit it from the URL. You will be prompted to login with your SmartThings account.</li>
 <li>If you need to invalidate the access_token, you can reset it via the SmartApp configuration, uninstall the SmartApp or change OAuth details in the App Settings (IDE).</li>
 </ul>
+
+<h1>
+<a id="dropcam-stream" class="anchor" href="#dropcam-stream" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dropcam Stream</h1>
+
+<p>In order to display a Dropcam stream, your camera must bu public. This is the only way to display a Dropcam stream.</p>
+
+<ol>
+<li>Login into your Dropcam account and select the camera that you want to add to the dashboard. Click on Sharing &gt; Public. Click on "Make Public" button.</li>
+<li>Copy content of "Embed Video" box to a text editor.</li>
+<li>Inside the block of code there will be a URL that looks like 
+<a href="https://www.dropcam.com/e/1234abcd?autoplay=true">https://www.dropcam.com/e/1234abcd?autoplay=true</a>
+</li>
+<li>Copy this URL into your SmartApp.</li>
+</ol>
       </section>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/625alex">625alex</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ActiON-Dashboard maintained by <a href="https://github.com/625alex">625alex</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
