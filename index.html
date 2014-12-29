@@ -40,7 +40,7 @@
 
 <p>ActiON Dashboard is a web client for SmartThings. It is designed to run in any modern browser, regardless of operating system or screen size.</p>
 
-<p>ActiON Dashboard SmartApp easily installs in 2 minues. Create as many instances as you need and pick relevant devices for each dashboard.</p>
+<p>ActiON Dashboard SmartApp easily installs in 2 minutes. Create as many instances as you need and pick relevant devices for each dashboard.</p>
 
 <p>ActiON Dashboard has no dependency on the SmartThings Mobile app or third party services.</p>
 
@@ -56,16 +56,16 @@
 </ul>
 
 <h1>
-<a id="create-smartapp" class="anchor" href="#create-smartapp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create SmartApp</h1>
+<a id="install-smartapp-in-the-ide" class="anchor" href="#install-smartapp-in-the-ide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install SmartApp in the IDE</h1>
 
 <ol>
-<li>Login to <a href="https://graph.api.smartthings.com/">https://graph.api.smartthings.com/</a>
+<li>Login to <a href="https://graph.api.smartthings.com/">IDE</a>
 </li>
-<li>Click on My SmartApps <a href="https://graph.api.smartthings.com/ide/apps">https://graph.api.smartthings.com/ide/apps</a>
+<li>Click on <a href="https://graph.api.smartthings.com/ide/apps">My SmartApps</a>
 </li>
 <li>Click on "+ New SmartApp" on the right side</li>
 <li>Click on "From Code" tab</li>
-<li>Paste the <a href="https://github.com/625alex/ActiON-Dashboard/blob/master/app-v4/ActiON4SmartApp.groovy" target="_blank">SmartApp code</a>
+<li>Paste the <a href="https://github.com/625alex/ActiON-Dashboard/blob/master/app-v4/ActiON4SmartApp.groovy">SmartApp code</a>
 </li>
 <li>Click "Create" button on the bottom of the page</li>
 <li>Click "App Settings" button on top right of the page</li>
@@ -84,41 +84,27 @@
 <li>Tap (+) on the bottom of the app</li>
 <li>Swipe all the way to the right to My Apps</li>
 <li>Pick the app that you created</li>
-<li>Follow through configuration of the SmartApp</li>
+<li>Follow through SmartApp preferences and copy the dashboard URL</li>
 <li>Don't forget to click "Done"</li>
 </ol>
 
-<p>To obtain the URL of your ActiON Dashboard</p>
-
-<ol>
-<li>Open logs at <a href="https://graph.api.smartthings.com/ide/logs">https://graph.api.smartthings.com/ide/logs</a> </li>
-<li>Go to My Apps section in SmartThings Mobile app</li>
-<li>Tap the icon of ActiON SmartApp</li>
-<li>The ActiON Dashboard URL will be printed in the logs</li>
-</ol>
-
 <h1>
-<a id="install-app-via-smartthings-ide" class="anchor" href="#install-app-via-smartthings-ide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install app via SmartThings IDE</h1>
+<a id="install-app-via-smartthings-ide-no-longer-supported" class="anchor" href="#install-app-via-smartthings-ide-no-longer-supported" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install app via SmartThings IDE (no longer supported)</h1>
 
 <ol>
-<li>Login to <a href="https://graph.api.smartthings.com/">https://graph.api.smartthings.com/</a>
+<li>Login to <a href="https://graph.api.smartthings.com/">IDE</a>
 </li>
-<li>Click on My SmartApps <a href="https://graph.api.smartthings.com/ide/apps">https://graph.api.smartthings.com/ide/apps</a>
+<li>Click on <a href="https://graph.api.smartthings.com/ide/apps">My SmartApps</a>
 </li>
 <li>Click on the name of the app you want to install</li>
 <li>Pick location in the drop-down on top right</li>
 <li>Click "Set Location" button</li>
-<li>Follow through 3 configuration steps of the SmartApp. Click "Next" button after each step and finally click "Done". Don't forget to get through all pages, don't click "Install" button too soon.</li>
+<li><strong><em>Don't click "Install" button</em></strong></li>
+<li>Follow through SmartApp preferences. Click "Next" button finally click "Done".</li>
+<li>Dashboard URL is printed in the logs</li>
 </ol>
 
-<p>To obtain the URL of your ActiON Dashboard</p>
-
-<ol>
-<li>Open logs in another tab at <a href="https://graph.api.smartthings.com/ide/logs">https://graph.api.smartthings.com/ide/logs</a>
-</li>
-<li>Back in the tab that had the SmartApp details, click "Trigger Now" button on right side under Preferences</li>
-<li>The ActiON Dashboard URL will be printed in the logs</li>
-</ol>
+<p>Please not that I no longer support this feature. Installing via the IDE works, but people will have to figure it out on their own.</p>
 
 <h1>
 <a id="android-and-ios-native-apps" class="anchor" href="#android-and-ios-native-apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android and iOS native apps</h1>
@@ -130,13 +116,13 @@
 
 <ul>
 <li>If you don’t want to expose the access_token, you can omit it from the URL. You will be prompted to login with your SmartThings account.</li>
-<li>If you need to invalidate the access_token, you can reset it via the SmartApp configuration, uninstall the SmartApp or change OAuth details in the App Settings (IDE).</li>
+<li>If you need to invalidate the access_token, you can reset it via the SmartApp preferences, uninstall the SmartApp or change OAuth details in the App Settings (IDE).</li>
 </ul>
 
 <h1>
 <a id="dropcam-stream" class="anchor" href="#dropcam-stream" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dropcam Stream</h1>
 
-<p>In order to display a Dropcam stream, your camera must be public. This is the only way to display a Dropcam stream.</p>
+<p>In order to display a Dropcam stream, your camera must be public. This is the only way to display a Dropcam stream. This only works on Desktop browsers since Dropcam requires Flash.</p>
 
 <ol>
 <li>Login into your Dropcam account and select the camera that you want to add to the dashboard. Click on Sharing &gt; Public. Click on "Make Public" button.</li>
@@ -146,6 +132,34 @@
 </li>
 <li>Copy this URL into your SmartApp.</li>
 </ol>
+
+<h1>
+<a id="troubleshooting" class="anchor" href="#troubleshooting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Troubleshooting</h1>
+
+<p>If you encountering errors during installation you either</p>
+
+<ul>
+<li>  You didn’t enable OAuth when you installed the app in the IDE (see above).</li>
+<li>  You tried to install via the IDE and clicked "Install" rather than "Done" (see above).</li>
+<li>  You are upgrading from version 3 and you didn’t step through app preferences.</li>
+</ul>
+
+<p>If neither of these is applicable, please contact the developer.</p>
+
+<h1>
+<a id="tips-and-tricks" class="anchor" href="#tips-and-tricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tips and tricks</h1>
+
+<ul>
+<li>  If you think your tiles are too small/big you can try to change this from the default target size of 120px. To do that, add "&amp;t=120" at the end of your dashboard's URL and play with the value to see what works best for you. If you are using a desktop browser you can also use zoom in/out.</li>
+<li>  There were feature requests for one switch control a group of switches.
+
+<ul>
+<li> This can be achieved with Big Switch app by ST. You can find it on your mobile app. Tap (+) &gt; More &gt; Convenience &gt; Scroll to the bottom and find "The Big Switch" app. Then setup the master and slave switches.</li>
+<li> If you want to create a virtual (master) switches, go to IDE &gt; My Devices &gt; New Device. Enter required fields and choose "On/Off Button Tile" in the type election box. Then you can use it as any other switch and put it on the dashboard.</li>
+</ul>
+</li>
+<li>  If you want multiple instances of the dashboard, install SmartApp only once in the IDE. Then, create as many instances as necessary in the ST Mobile App. Each instance has its own set of preferences.</li>
+</ul>
       </section>
     </div>
 
