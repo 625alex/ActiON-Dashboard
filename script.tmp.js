@@ -42,8 +42,9 @@ $(function() {
 	
 	$(".music .pause").click(function() {
 		var tile = $(this).closest(".tile");
-		alert(tile.html());
+		alert(tile.attr("class"));
 		tile.removeClass("inactive").addClass("active");
+		alert(tile.attr("class"));
 		sendCommand("music", tile.attr("data-device"), "play");
 	});
 	
