@@ -36,15 +36,13 @@ $(function() {
     
 	$(".music .play").click(function() {
 		var tile = $(this).closest(".tile");
-		tile.removeClass("active").addClass("inactive");
+		$(this).closest(".tile").toggleClass("active");
 		sendCommand("music", tile.attr("data-device"), "stop");
 	});
 	
 	$(".music .pause").click(function() {
 		var tile = $(this).closest(".tile");
-		alert(tile.attr("class"));
-		tile.removeClass("inactive").addClass("active");
-		alert(tile.attr("class"));
+		$(this).closest(".tile").toggleClass("active");
 		sendCommand("music", tile.attr("data-device"), "play");
 	});
 	
