@@ -8,7 +8,7 @@ $(function() {
 		animateClick($(this));
 	});
 	
-	$(".switch, .lock, .momentary, .music .play, .music .pause, .holiday, .camera").click(function() {
+	$(".switch, .lock, .momentary, .holiday, .camera").click(function() {
 		$(this).closest(".tile").toggleClass("active");
         sendCommand($(this).attr("data-type"), $(this).attr("data-device"), "toggle");
 	});
