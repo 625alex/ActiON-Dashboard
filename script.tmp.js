@@ -58,12 +58,12 @@ $(function() {
 	
 	$(".music .back").click(function() {
 		var tile = $(this).closest(".tile");
-		sendCommand("music", tile.attr("data-device"), "nextTrack");
+		sendCommand("music", tile.attr("data-device"), "previousTrack");
 	});
 	
 	$(".music .forward").click(function() {
 		var tile = $(this).closest(".tile");
-		sendCommand("music", tile.attr("data-device"), "previousTrack");
+		sendCommand("music", tile.attr("data-device"), "nextTrack");
 	});
 	
 	$(".mode, .hello-home, .thermostat").click(function() {
@@ -104,9 +104,9 @@ $(function() {
 var fadeOn = 100;
 var fadeOff = 200;
 
-function animateClick(element, toggle) {
+function animateClick(element) {
 	spinner(element);
-	element.animate({opacity: 0.3}, fadeOff, "swing").delay(fadeOn).animate({opacity: 1}, fadeOn, "swing");
+	element.closest(".tile").animate({opacity: 0.3}, fadeOff, "swing").delay(fadeOn).animate({opacity: 1}, fadeOn, "swing");
 }
 
 function spinner(element) {
