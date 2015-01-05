@@ -210,7 +210,7 @@ function updateTile(data) {
 		var tile = $("." + data.type + "[data-device=" + data.device + "]");
 	
 		if (data.type == "music") {
-			if (data.trackDescription != tile.attr("data-track-description") || data.mute != tile.attr("data-mute")) spinner(tile);
+			if (data.trackDescription != tile.attr("data-track-description") || (data.mute + "") != tile.attr("data-mute")) spinner(tile);
 			tile.attr("data-track-description", data.trackDescription);
 			if (tile.data("data-mute") != (data.mute + "")) {tile.toggleClass("muted");}
 			tile.attr("data-mute", data.mute);
