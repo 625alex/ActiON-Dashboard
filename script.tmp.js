@@ -212,7 +212,7 @@ function updateTile(data) {
 		if (data.type == "music") {
 			if (data.trackDescription != tile.attr("data-track-description") || (data.mute + "") != tile.attr("data-mute")) spinner(tile);
 			tile.attr("data-track-description", data.trackDescription);
-			if (tile.data("data-mute") != (data.mute + "")) {alert("attr: " + tile.attr("data-mute") + " | data: " + data.mute + " | " + ((data.mute + "") == tile.attr("data-mute")));tile.toggleClass("muted");}
+			if ((data.mute + "") != tile.attr("data-mute")) {alert("attr: " + tile.attr("data-mute") + " | data: " + data.mute + " | " + ((data.mute + "") == tile.attr("data-mute")));tile.toggleClass("muted");}
 			tile.attr("data-mute", data.mute);
 			tile.find(".title .track").html(tile.attr("data-track-description"));
 		}
