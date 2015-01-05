@@ -4,7 +4,7 @@ $(function() {
 	
 	setIcons();
 	
-	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera").click(function() {
+	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera, .music i").click(function() {
 		animateClick($(this));
 	});
 	
@@ -12,7 +12,12 @@ $(function() {
 		$(this).closest(".tile").toggleClass("active");
         sendCommand($(this).attr("data-type"), $(this).attr("data-device"), "toggle");
 	});
-                
+	
+	$(".dimmer").click(function() {
+		$(this).toggleClass("active");
+    	sendCommand("dimmer", $(this).attr("data-device"), "toggle", $(this).attr("data-level"));
+    });
+	
     $(".dimmer").on('slidestop', function(e) {
     	var level = $(this).find("input").val()
 		if ($(this).hasClass("active")) {
@@ -21,11 +26,35 @@ $(function() {
 		};
 		$(this).attr("data-level", level);
     });
-    
-    $(".dimmer").click(function() {
-		$(this).toggleClass("active");
-    	sendCommand("dimmer", $(this).attr("data-device"), "toggle", $(this).attr("data-level"));
+	
+	 $(".music").on('slidestop', function(e) {
+    	var level = $(this).find("input").val()
+		animateClick($(this));
+		sendCommand("music", $(this).attr("data-device"), "level", level);
+		$(this).attr("data-level", level);
     });
+    
+	$(".music .play").click(function() {
+		var tile = $(this).closest(".tile");
+		tile.removeClass("active");
+		sendCommand("music", tile.attr("data-device"), "pause");
+	});
+	
+	$(".music .pause").click(function() {
+		var tile = $(this).closest(".tile");
+		tile.addClass("active");
+		sendCommand("music", tile.attr("data-device"), "play");
+	});
+	
+	$(".music .unmuted").click(function() {
+		var tile = $(this).closest(".tile");
+		sendCommand("music", tile.attr("data-device"), "mute");
+	});
+	
+	$(".music .muted").click(function() {
+		var tile = $(this).closest(".tile");
+		sendCommand("music", tile.attr("data-device"), "unmute");
+	});
 	
 	$(".mode, .hello-home, .thermostat").click(function() {
 		$("#" + $(this).attr("data-popup")).popup("open");
@@ -60,10 +89,6 @@ $(function() {
     });
 	
 	startTime();
-	
-	$(".wtfcloud").click(function(){
-		$("#wtfcloud-popup").popup("open");
-	});
 });
 
 var fadeOn = 100;
