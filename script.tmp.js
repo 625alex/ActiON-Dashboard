@@ -37,13 +37,13 @@ $(function() {
 	$(".music .play").click(function() {
 		var tile = $(this).closest(".tile");
 		$(this).closest(".tile").toggleClass("active");
-		sendCommand("music", tile.attr("data-device"), "stop");
+		sendCommand("music", tile.attr("data-device"), "play");
 	});
 	
 	$(".music .pause").click(function() {
 		var tile = $(this).closest(".tile");
 		$(this).closest(".tile").toggleClass("active");
-		sendCommand("music", tile.attr("data-device"), "play");
+		sendCommand("music", tile.attr("data-device"), "pause");
 	});
 	
 	$(".music .muted").click(function() {
