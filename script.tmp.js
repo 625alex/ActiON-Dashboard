@@ -194,11 +194,9 @@ function updateTile(data) {
 				tile.attr("data-active", data.active);
 			}
 			
-			if (data.type == "dimmer") {
+			if (data.type == "dimmer" || data.type == "music") {
 				if (data.level != tile.attr("data-level")) spinner(tile);
 				tile.attr("data-level", data.level);
-				renderSlider(tile);
-			} else if  (data.type == "music") {
 				renderSlider(tile);
 			}
 		}
