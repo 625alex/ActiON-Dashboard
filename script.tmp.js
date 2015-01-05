@@ -48,11 +48,13 @@ $(function() {
 	
 	$(".music .muted").click(function() {
 		var tile = $(this).closest(".tile");
+		$(this).closest(".tile").toggleClass("muted");
 		sendCommand("music", tile.attr("data-device"), "unmute");
 	});
 	
 	$(".music .unmuted").click(function() {
 		var tile = $(this).closest(".tile");
+		$(this).closest(".tile").toggleClass("muted");
 		sendCommand("music", tile.attr("data-device"), "mute");
 	});
 	
@@ -210,8 +212,8 @@ function updateTile(data) {
 		if (data.type == "music") {
 			if (data.trackDescription != tile.attr("data-track-description") || data.mute != tile.attr("data-mute")) spinner(tile);
 			tile.attr("data-track-description", data.trackDescription);
+			if (tile.attr("mute" != data.mute) {tile.toggleClass("muted");}
 			tile.attr("mute", data.mute);
-			tile.removeClass("muted unmuted").addClass(data.mute);
 			tile.find(".title .track").html(tile.attr("data-track-description"));
 		}
 		
