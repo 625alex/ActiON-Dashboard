@@ -46,14 +46,24 @@ $(function() {
 		sendCommand("music", tile.attr("data-device"), "play");
 	});
 	
+	$(".music .muted").click(function() {
+		var tile = $(this).closest(".tile");
+		sendCommand("music", tile.attr("data-device"), "unmute");
+	});
+	
 	$(".music .unmuted").click(function() {
 		var tile = $(this).closest(".tile");
 		sendCommand("music", tile.attr("data-device"), "mute");
 	});
 	
-	$(".music .muted").click(function() {
+	$(".music .back").click(function() {
 		var tile = $(this).closest(".tile");
-		sendCommand("music", tile.attr("data-device"), "unmute");
+		sendCommand("music", tile.attr("data-device"), "nextTrack");
+	});
+	
+	$(".music .forward").click(function() {
+		var tile = $(this).closest(".tile");
+		sendCommand("music", tile.attr("data-device"), "previousTrack");
 	});
 	
 	$(".mode, .hello-home, .thermostat").click(function() {
