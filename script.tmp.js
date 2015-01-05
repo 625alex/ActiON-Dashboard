@@ -210,10 +210,9 @@ function updateTile(data) {
 		var tile = $("." + data.type + "[data-device=" + data.device + "]");
 	
 		if (data.type == "music") {
-		alert("attr: " + tile.attr("data-mute") + " | data: " + data.mute + " | " + ((data.mute + "") == tile.attr("data-mute")));
 			if (data.trackDescription != tile.attr("data-track-description") || (data.mute + "") != tile.attr("data-mute")) spinner(tile);
 			tile.attr("data-track-description", data.trackDescription);
-			if (tile.data("data-mute") != (data.mute + "")) {tile.toggleClass("muted");}
+			if (tile.data("data-mute") != (data.mute + "")) {alert("attr: " + tile.attr("data-mute") + " | data: " + data.mute + " | " + ((data.mute + "") == tile.attr("data-mute")));tile.toggleClass("muted");}
 			tile.attr("data-mute", data.mute);
 			tile.find(".title .track").html(tile.attr("data-track-description"));
 		}
