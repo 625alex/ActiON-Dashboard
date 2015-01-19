@@ -44,7 +44,7 @@
 
 <p>ActiON Dashboard has no dependency on the SmartThings Mobile app or third party services.</p>
 
-<p><a href="https://github.com/625alex/ActiON-Dashboard/blob/master/app-v4/ActiON4SmartApp.groovy">Download SmartApp</a></p>
+<p><a href="https://github.com/625alex/ActiON-Dashboard/blob/master/app-v4/ActiON4SmartApp4.4.groovy">Download SmartApp</a></p>
 
 <h1>
 <a id="uses" class="anchor" href="#uses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Uses</h1>
@@ -150,15 +150,13 @@
 <a id="tips-and-tricks" class="anchor" href="#tips-and-tricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tips and tricks</h1>
 
 <ul>
-<li>  If you think your tiles are too small/big you can try to change this from the default target size of 120px. To do that, add "&amp;t=120" at the end of your dashboard's URL and play with the value to see what works best for you. If you are using a desktop browser you can also use zoom in/out.</li>
-<li>  There were feature requests for one switch control a group of switches.
-
-<ul>
-<li> This can be achieved with Big Switch app by ST. You can find it on your mobile app. Tap (+) &gt; More &gt; Convenience &gt; Scroll to the bottom and find "The Big Switch" app. Then setup the master and slave switches.</li>
-<li> If you want to create a virtual (master) switches, go to IDE &gt; My Devices &gt; New Device. Enter required fields and choose "On/Off Button Tile" in the type election box. Then you can use it as any other switch and put it on the dashboard.</li>
-</ul>
-</li>
+<li>  If you think your tiles are too small/big you can try to change app preferences. If you don't achieve a desired result, add "&amp;t=120" at the end of your dashboard's URL and play with the value to see what works best for you. If you are using a desktop browser you can also use zoom in/out.</li>
+<li>  There were feature requests for one switch control a group of switches. This can be achieved with Big Switch app by ST. You can find it on your mobile app. Tap (+) &gt; More &gt; Convenience &gt; Scroll to the bottom and find "The Big Switch" app. Then setup the master and slave switches.</li>
+<li>If you want to create a virtual (master) switches, go to IDE &gt; My Devices &gt; New Device. Enter required fields and choose "On/Off Button Tile" in the type election box. Then you can use it as any other switch and put it on the dashboard.</li>
 <li>  If you want multiple instances of the dashboard, install SmartApp only once in the IDE. Then, create as many instances as necessary in the ST Mobile App. Each instance has its own set of preferences.</li>
+<li>  Since the app is designed to scale across a range of screen sizes, you get to define only linear order, the tiles will wrap to the next line depending on available space. If you want certain tile to appear on certain row/column for a particular screen size, just count the position considering sizes of other tiles.</li>
+<li>  If you want to change the style, I added a block of code for your custom CSS overrides. Add your style within customCSS() method. I will always keep it at the end of the SmartApp</li>
+<li>  To add weather tile, do to IDE &gt; My Devices, add SmartWeather Tile. It will be listed as one of your devices and you could pick it when you configure preferences of ActiON Dashboard.</li>
 </ul>
       </section>
     </div>
