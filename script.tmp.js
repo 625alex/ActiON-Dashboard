@@ -4,7 +4,13 @@ $(function() {
 	
 	setIcons();
 	
-	if (readOnlyMode) {startTime(); return false;}
+	$(".refresh, .clock").click(function() {
+        refresh();
+	});
+    
+	startTime();
+	
+	if (readOnlyMode) {return false;}
 	
 	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera, .music i").click(function() {
 		animateClick($(this));
@@ -74,10 +80,6 @@ $(function() {
 		$("#" + $(this).attr("data-popup")).popup("open");
     });
     
-    $(".refresh, .clock").click(function() {
-        refresh();
-	});
-    
     $("#mode-popup li").click(function() {
     	$("#mode-popup").popup("close");
 		var tile = $(".mode");
@@ -101,8 +103,6 @@ $(function() {
 		animateClick($(".hello-home"));
 		sendCommand("helloHome", "helloHome", $(this).text());
     });
-	
-	startTime();
 });
 
 var fadeOn = 100;
