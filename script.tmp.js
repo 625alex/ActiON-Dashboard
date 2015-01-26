@@ -1,8 +1,10 @@
 $(function() {
-	//$(".switch, .dimmer, .lock, .menu, .momentary, .link, .holiday, .camera, .music, .thermostat, .refresh").append("<i class='spinner fa fa-refresh fa-spin'></i>");
+	
 	$(".tile").append("<i class='spinner fa fa-refresh fa-spin'></i>");
 	
 	setIcons();
+	
+	if (readOnlyMode) {startTime();}
 	
 	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera, .music i").click(function() {
 		animateClick($(this));
@@ -147,7 +149,7 @@ function setIcons() {
 
 function renderSlider(tile) {
 	tile.find(".slider-container").remove();
-	tile.append("<div class='slider-container'><div class='full-width-slider'><input value='" + tile.attr("data-level") + "' min='1' max='10' type='range' step='1' data-mini='true' data-popup-enabled='true' data-disabled='false' data-highlight='true'></div></div>").find("input").slider()
+	tile.append("<div class='slider-container'><div class='full-width-slider'><input value='" + tile.attr("data-level") + "' min='1' max='10' type='range' step='1' data-mini='true' data-popup-enabled='true' data-disabled='" + readOnlyMode + "' data-highlight='true'></div></div>").find("input").slider()
 	$(".full-width-slider").click(function(e) {e.stopImmediatePropagation();});
 }
 
@@ -159,7 +161,7 @@ function renderValue(tile) {
 function renderWeather(tile) {
 	var data = JSON.parse(tile.attr("data-weather"));
 	tile.empty();
-	var content = "<div class='title'>" + data.city + "<br/><span class='title2'>" + data.weather + ", feels like " + data.feelsLike + "&deg;</span></div>\n\
+	var content = "<div class='title'>" + tile.attr("data-city") + "<br/><span class='title2'>" + data.weather + ", feels like " + data.feelsLike + "&deg;</span></div>\n\
 <div class='icon'><span class='text'>" + data.temperature + "&deg;</span><i class='wi " + data.icon + "'></i></span></div>\n\
 <div class='footer'>" + data.localSunrise + " <i class='fa fa-fw wi wi-horizon-alt'></i> " + data.localSunset + "</div>\n\
 <div class='footer right'>" + data.percentPrecip + "%<i class='fa fa-fw fa-umbrella'></i><br>" + data.humidity + "%<i class='fa fa-fw wi wi-sprinkles'></i></div>";
@@ -338,7 +340,7 @@ function checkTime(i) {
     if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
-alert("tileSize" + tileSize);
+
 var cellSize = getUrlParameter("t") || tileSize;
 var cellGutter = getUrlParameter("g") || 4;
 
