@@ -4,7 +4,7 @@ $(function() {
 	
 	setIcons();
 	
-	if (readOnlyMode) {startTime();}
+	if (readOnlyMode) {startTime(); return false;}
 	
 	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera, .music i").click(function() {
 		animateClick($(this));
