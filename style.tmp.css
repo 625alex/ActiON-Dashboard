@@ -70,9 +70,6 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 .spinner {bottom: 5px;right:5px;color: white;font-size: 10px;line-height:10px;position: absolute; display:none}
 .opaque {opacity: 0.3;}
 
-.tile.active .icon.inactive {display:none}
-.tile:not(.active) .icon.active {display:none}
-
 .mode:not(.Home) .icon.Home {display:none}
 .mode.Home .icon.text{display:none}
 .mode:not(.Away) .icon.Away {display:none}
@@ -125,3 +122,7 @@ box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 
 .holiday {background-color: #11772D;} /*green*/
 .holiday.active {background-color: #AB0F0B}
 .holiday.active .icon i {color:#11772D}
+
+/** icons **/
+.tile.active .icon i.inactive {display:none}
+.tile:not(.active) .icon i.active {display:none}
