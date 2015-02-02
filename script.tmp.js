@@ -120,8 +120,8 @@ function spinner(element) {
 }
 
 function setIcons() {
-	$(".switch, .dimmer").append("<div class='icon'>" + icons.switch.on + icons.switch.off + "</i></div>");
-	$(".light").append("<div class='icon'>" + icons.light.on + icons.light.off + "</i></div>");
+	$(".switch, .dimmer").append("<div class='icon'>" + icons.switch.on + icons.switch.off + "</div>");
+	$(".light").append("<div class='icon'>" + icons.light.on + icons.light.off + "</div>");
 	$(".holiday").append("<div class='icon'>" + icons.holiday.active + icons.holiday.inactive + "</div>");
 	$(".lock").append("<div class='icon'>" + icons.lock.locked + icons.lock.unlocked + "</div>");
 	$(".motion").append("<div class='icon'>" + icons.motion.active + icons.motion.inactive + "</div>");
@@ -140,6 +140,10 @@ function setIcons() {
 	$(".energy").append("<div class='footer'>" + icons.energy + "</div>");
 	$(".power").append("<div class='footer'>" + icons.power + "</div>");
 	$(".battery").append("<div class='footer'>" + icons.battery + "</div>");
+	$(".hello-home").append("<div class='footer'>" + icons.helloHome + "</div>");
+	
+	$(".link").find("a").html("<div class='icon'>" + icons.link + "</div>");
+	$(".dashboard").find("a").html("<div class='icon'>" + icons.dashboard + "</div>");
 	
 	$(".tile[data-is-value=true]").each(function(){renderValue($(this))});
 }
