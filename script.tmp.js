@@ -142,8 +142,8 @@ function setIcons() {
 	$(".battery").append("<div class='footer'>" + icons.battery + "</div>");
 	$(".hello-home").append("<div class='footer'>" + icons.helloHome + "</div>");
 	
-	$(".link").find("a").html("<div class='icon'>" + icons.link + "</div>");
-	$(".dashboard").find("a").html("<div class='icon'>" + icons.dashboard + "</div>");
+	$(".link").find("a").html(icons.link);
+	$(".dashboard").find("a").html(icons.dashboard);
 	
 	$(".tile[data-is-value=true]").each(function(){renderValue($(this))});
 }
