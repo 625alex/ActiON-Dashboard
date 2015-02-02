@@ -140,7 +140,7 @@ function setIcons() {
 	$(".energy").append("<div class='footer'>" + icons.energy + "</div>");
 	$(".power").append("<div class='footer'>" + icons.power + "</div>");
 	$(".battery").append("<div class='footer'>" + icons.battery + "</div>");
-	$(".hello-home").append("<div class='footer'>" + icons.helloHome + "</div>");
+	$(".hello-home").append("<div class='icon'>" + icons.helloHome + "</div>");
 	
 	$(".link").find("a").html(icons.link);
 	$(".dashboard").find("a").html(icons.dashboard);
