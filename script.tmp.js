@@ -18,6 +18,12 @@ $(function() {
 		animateClick($(this));
 	});
 	
+	$(".dashboard").click(function(e) {
+		animateClick($(this));
+		e.stopImmediatePropagation();
+		window.location = $(this).find("a").attr("href");
+	});
+	
 	$(".switch, .light, .lock, .momentary, .holiday, .camera").click(function() {
 		$(this).closest(".tile").toggleClass("active");
         sendCommand($(this).attr("data-type"), $(this).attr("data-device"), "toggle");
