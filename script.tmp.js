@@ -14,11 +14,11 @@ $(function() {
 	
 	if (readOnlyMode) {return false;}
 	
-	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera, .music i").click(function() {
+	$(".switch, .dimmer, .momentary, .clock, .lock, .link, .holiday, .camera, .music i, .light").click(function() {
 		animateClick($(this));
 	});
 	
-	$(".switch, .lock, .momentary, .holiday, .camera").click(function() {
+	$(".switch, .light, .lock, .momentary, .holiday, .camera").click(function() {
 		$(this).closest(".tile").toggleClass("active");
         sendCommand($(this).attr("data-type"), $(this).attr("data-device"), "toggle");
 	});
