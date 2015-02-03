@@ -120,9 +120,9 @@ function spinner(element) {
 }
 
 function setIcons() {
-	$(".switch").append("<div class='icon'>" + icons.switch.on + icons.switch.off + "'></i></div>");
-	$(".dimmer").append("<div class='icon'>" + icons.dimmer.on + icons.dimmer.off + "'></i></div>");
-	$(".light").append("<div class='icon'>" + icons.light.on + icons.light.off + "'></i></div>");
+	$(".switch").append("<div class='icon'>" + icons.switch.on + icons.switch.off + "</div>");
+	$(".dimmer").append("<div class='icon'>" + icons.dimmer.on + icons.dimmer.off + "</div>");
+	$(".light").append("<div class='icon'>" + icons.light.on + icons.light.off + "</div>");
 	$(".holiday").append("<div class='icon'>" + icons.holiday.on + icons.holiday.off + "</div>");
 	$(".lock").append("<div class='icon'>" + icons.lock.locked + icons.lock.unlocked + "</div>");
 	$(".motion").append("<div class='icon'>" + icons.motion.active + icons.motion.inactive + "</div>");
@@ -136,11 +136,16 @@ function setIcons() {
 	$(".momentary").append("<div class='icon'>" + icons.momentary + "</div>");
 	$(".camera").append("<div class='icon'>" + icons.camera + "</div>");
 	$(".refresh").append("<div class='icon'>" + icons.refresh + "</div>");
+	$(".hello-home").append("<div class='icon'>" + icons.helloHome + "</div>");
+	
 	$(".humidity").append("<div class='footer'>" + icons.humidity + "</div>");
 	$(".temperature").append("<div class='footer'>" + icons.temperature + "</div>");
 	$(".energy").append("<div class='footer'>" + icons.energy + "</div>");
 	$(".power").append("<div class='footer'>" + icons.power + "</div>");
 	$(".battery").append("<div class='footer'>" + icons.battery + "</div>");
+	
+	$(".link").find("a").html(icons.link);
+	$(".dashboard").find("a").html(icons.dashboard);
 	
 	$(".tile[data-is-value=true]").each(function(){renderValue($(this))});
 }
