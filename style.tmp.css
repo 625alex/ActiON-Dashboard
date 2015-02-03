@@ -29,7 +29,7 @@
 body {background-color: #1d1d1d!important;}
 .tile {border-radius:2px;color:white}
 .tiles {margin:2px;}
-.switch, .dimmer, .momentary, .clock, .lock, .refresh, .link, .menu, .thermostat, .music i, .holiday, .camera, .light {cursor: pointer;}
+.switch, .dimmer, .momentary, .clock, .lock, .refresh, .link, .dashboard, .menu, .thermostat, .music i, .holiday, .camera, .light {cursor: pointer;}
 .tiles {overflow:hidden}
 .tile {width: 120px; height: 120px;}
 .w2 {width: 240px;}
