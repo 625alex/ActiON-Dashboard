@@ -21,6 +21,7 @@
 .camera{background-color: #cddc39} /*lime*/
 .video {background-color:#8E8E8E} /*dropcam grey*/
 .blank.tile{background:none;}
+.dashboard {background-color: #FE0002;} /* red */
 
 .dimmer .ui-slider-bg.ui-btn-active, .music .ui-slider-bg.ui-btn-active {background-color:grey;}
 .dimmer.active .ui-slider-bg.ui-btn-active {background-color:#81c784;}

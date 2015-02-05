@@ -21,6 +21,7 @@ $(function() {
 	$(".dashboard").click(function(e) {
 		animateClick($(this));
 		e.stopImmediatePropagation();
+		$(".refresh .icon").addClass("fa-spin");
 		window.location = $(this).find("a").attr("href");
 	});
 	
