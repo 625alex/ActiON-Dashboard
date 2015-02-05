@@ -21,7 +21,7 @@ $(function() {
 	$(".dashboard").click(function(e) {
 		animateClick($(this));
 		e.stopImmediatePropagation();
-		doURLSwap($(this).find("a").attr("href"));
+		window.location = $(this).find("a").attr("href");
 	});
 	
 	$(".switch, .light, .lock, .momentary, .holiday, .camera").click(function() {
@@ -294,12 +294,6 @@ function doRefresh() {
 	});
 }
 
-function doURLSwap(url) {
-	doPoll(function func(){
-		$(".refresh .icon").addClass("fa-spin");
-		window.location = url;
-	});
-}
 refresh(60 * 60); // hard refresh every hour
 
 function getUrlParameter(sParam)
