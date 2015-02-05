@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="ActiON Dashboard, a SmartThings web client. : Your home has a Home Page!™">
+    <meta name="description" content="ActiON Dashboard : Your home has a Home Page!™">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>ActiON Dashboard, a SmartThings web client.</title>
+    <title>ActiON Dashboard</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/625alex/ActiON-Dashboard">View on GitHub</a>
 
-          <h1 id="project_title">ActiON Dashboard, a SmartThings web client.</h1>
+          <h1 id="project_title">ActiON Dashboard</h1>
           <h2 id="project_tagline">Your home has a Home Page!™</h2>
 
             <section id="downloads">
@@ -32,7 +32,9 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="smartthings-action-dashboard" class="anchor" href="#smartthings-action-dashboard" aria-hidden="true"><span class="octicon octicon-link"></span></a>SmartThings ActiON Dashboard</h1>
+<a id="action-dashboard-a-smartthings-web-client" class="anchor" href="#action-dashboard-a-smartthings-web-client" aria-hidden="true"><span class="octicon octicon-link"></span></a>ActiON Dashboard, a SmartThings web client</h1>
+
+<p><strong>Your home has a Home Page!™</strong></p>
 
 <p>If you like this app, please support the developer:<br> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=A5K5L44TEF77U"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="PayPal"> alex.smart.things@gmail.com</a></p>
 
@@ -54,6 +56,8 @@
 <li>Install on a wall-mounted tablet as a whole-house control panel.</li>
 <li>Create dashboards, as needed, for your family and friends and decide what they are allowed to view and control.</li>
 </ul>
+
+<p><img src="https://raw.githubusercontent.com/625alex/ActiON-Dashboard/gh-pages/sample.png" width="50%" height="50%"></p>
 
 <h1>
 <a id="install-smartapp-in-the-ide" class="anchor" href="#install-smartapp-in-the-ide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install SmartApp in the IDE</h1>
@@ -91,7 +95,7 @@
 <h1>
 <a id="android-and-ios-native-apps" class="anchor" href="#android-and-ios-native-apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android and iOS native apps</h1>
 
-<p>To install ActiON Dashboard as a native app, open the URL in Safari on iOS or Chrome on Android device, then add shortcut to the home screen. When the shortcut icon is tapped, the dashboard launches as a full screen native application (without toolbars).</p>
+<p>To install ActiON Dashboard as a native app, open the URL in Safari on iOS or Chrome on Android device, then add shortcut to the home screen. When the shortcut icon is tapped, the dashboard launches as a full screen native application (without tool bars).</p>
 
 <h1>
 <a id="oauth" class="anchor" href="#oauth" aria-hidden="true"><span class="octicon octicon-link"></span></a>OAuth</h1>
@@ -118,11 +122,9 @@
 <h1>
 <a id="troubleshooting" class="anchor" href="#troubleshooting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Troubleshooting</h1>
 
-<p>If you encountering errors during installation you either</p>
-
 <ul>
-<li>  You didn’t enable OAuth when you installed the app in the IDE (see above).</li>
-<li>  You are upgrading from version 3 and you didn’t step through app preferences.</li>
+<li>  Make sure you didn’t forget to enable OAuth when you installed the app in the IDE (see above).</li>
+<li>  If you are upgrading from a previous version, make sure to step through app preferences and tap "Done". You don't actually need to make any changes to the preferences.</li>
 </ul>
 
 <p>If neither of these is applicable, please contact the developer.</p>
@@ -132,20 +134,33 @@
 
 <ul>
 <li>  If you think your tiles are too small/big you can try to change app preferences. If you don't achieve a desired result, add "&amp;t=120" at the end of your dashboard's URL and play with the value to see what works best for you. If you are using a desktop browser you can also use zoom in/out.</li>
-<li>  There were feature requests for one switch control a group of switches. This can be achieved with Big Switch app by ST. You can find it on your mobile app. Tap (+) &gt; More &gt; Convenience &gt; Scroll to the bottom and find "The Big Switch" app. Then setup the master and slave switches.</li>
+<li>  There were feature requests for one switch to control a group of switches. This can be achieved with Big Switch app by ST. You can find it on your mobile app. Tap (+) &gt; More &gt; Convenience &gt; Scroll to the bottom and find "The Big Switch" app. Then set up the master and slave switches.</li>
 <li>If you want to create a virtual (master) switches, go to IDE &gt; My Devices &gt; New Device. Enter required fields and choose "On/Off Button Tile" in the type election box. Then you can use it as any other switch and put it on the dashboard.</li>
 <li>  If you want multiple instances of the dashboard, install SmartApp only once in the IDE. Then, create as many instances as necessary in the ST Mobile App. Each instance has its own set of preferences.</li>
 <li>  Since the app is designed to scale across a range of screen sizes, you get to define only linear order, the tiles will wrap to the next line depending on available space. If you want certain tile to appear on certain row/column for a particular screen size, just count the position considering sizes of other tiles.</li>
-<li>  If you want to change the style, I added a block of code for your custom CSS overrides. Add your style within customCSS() method. I will always keep it at the end of the SmartApp</li>
+<li>  If you want to change the style, I added a block of code for your custom CSS overrides. Add your style within customCSS() method. I will always keep it at the end of the SmartApp.</li>
 <li>  To add weather tile, do to IDE &gt; My Devices, add SmartWeather Tile. It will be listed as one of your devices and you could pick it when you configure preferences of ActiON Dashboard.</li>
 </ul>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>This software if free for Private Use. You may use and modify the software without distributing it.</p>
+
+<p>This software and derivatives may not be used for commercial purposes.
+You may not modify, distribute or sublicense this software.
+You may not grant a sublicense to modify and distribute this software to third parties.</p>
+
+<p>Software is provided without warranty and the software author/license owner cannot be held liable for damages.</p>
+
+<p>Copyright © 2014 Alex Malikov</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">ActiON Dashboard, a SmartThings web client. maintained by <a href="https://github.com/625alex">625alex</a></p>
+        <p class="copyright">ActiON Dashboard maintained by <a href="https://github.com/625alex">625alex</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
