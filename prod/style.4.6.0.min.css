@@ -1,0 +1,125 @@
+.tile {background-color: grey}
+.weather {background-color: #a20025;}
+.clock {background-color: #607d8b;}/*blue gray*/
+.presence {background-color: #3f51b5;}/*indigo*/
+.lock {background-color: #f44336;/*red*/}
+.hello-home {background-color: #9c27b0;}/*purple*/
+.switch, .dimmer, .momentary, .light {background-color: #4caf50;} /*green*/
+.contact {background-color: #e91e63;}/*pink*/
+.refresh {background-color: #607d8b;} /*blue gray*/
+.temperature {background-color: #ff6f00;} /*amber 900*/
+.mode {background-color: #673ab7;}/*deep purple*/
+.motion {background-color: #2196f3;}/*blue*/
+.humidity {background-color: #795548;}/*brown*/
+.link {background-color: #263B44;}
+.thermostat {background-color: #009688} /*teal*/
+.energy {background-color: #558b2f} /*l green 800*/
+.power {background-color: #33691e} /*l green 900*/
+.water {background-color: #006064} /*cyan a900*/
+.music {background-color: #aa00ff} /*purple a700*/
+.battery {background-color: #954469}
+.camera{background-color: #cddc39} /*lime*/
+.video {background-color:#8E8E8E} /*dropcam grey*/
+.blank.tile{background:none;}
+.dashboard {background-color: #FE0002;} /* red */
+
+.dimmer .ui-slider-bg.ui-btn-active, .music .ui-slider-bg.ui-btn-active {background-color:grey;}
+.dimmer.active .ui-slider-bg.ui-btn-active {background-color:#81c784;}
+.music.active .ui-slider-bg.ui-btn-active {background-color:#ab47bc;}
+
+body {background-color: #1d1d1d!important;}
+.tile {border-radius:2px;color:white}
+.tiles {margin:2px;}
+.switch, .dimmer, .momentary, .clock, .lock, .refresh, .link, .dashboard, .menu, .thermostat, .music i, .holiday, .camera, .light {cursor: pointer;}
+.tiles {overflow:hidden}
+.tile {width: 120px; height: 120px;}
+.w2 {width: 240px;}
+.h2 {height:240px;}
+
+/* reset ***********************/
+body, .ui-page{background-color:black!important;}
+* {text-shadow:none;font-family:"Mallanna",Verdana,Arial,Helvetica,sans-serif}
+.ui-overlay-a {text-shadow:none}
+.ui-li-static.ui-body-inherit {text-align:center; cursor:pointer;}
+.ui-slider-track.ui-corner-all {border-radius: 1em;}
+
+.ui-shadow-inset{box-shadow:none!important}
+.ui-controlgroup, fieldset.ui-controlgroup{margin:0;}
+.ui-controlgroup-controls {margin-bottom:10px;}
+
+/*html body .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0;background-color:initial}*/
+html body .spinHeat .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0;background-color:orange}
+html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0;background-color:lightBlue}
+
+.popup {/*background-color:lightGrey!important; font-size:22px;*/padding:15px; text-align:center;}
+.spinbox {height:36px!important;}
+.wtfcloud {background: none}
+.wtfcloud .icon.cloud {margin-left: -100px;font-size: 200px;color:white;}
+.wtfcloud .icon.message {margin-left:-50px;margin-top: -65px;color:grey;}
+
+/* tiles *************************/
+.title {font-size:0.9em;line-height:1em;height:2em;overflow:ellipsis;position:absolute;top:5px;left:5px}
+.title2 {font-size: 12px}
+
+/** icons **/
+.tile.active .icon i.inactive {display:none}
+.tile:not(.active) .icon i.active {display:none}
+
+.icon {font-size:3em;line-height:3em;width:100%;margin-top: -1.5em;position: absolute;text-align: center;top: 50%;white-space:nowrap;}
+.icon.text {font-size:1.8em;line-height:2em;width:100%;margin-top: -1em;}
+
+.icon span.text {font-size: 0.75em; margin-right: 15px;}
+
+.footer {bottom: 5px;color: white;font-size: 11px;left: 5px;position: absolute;line-height:10px;}
+.footer.right {right:5px;text-align:right;}
+.footer i {font-size:16px}
+.spinner {bottom: 5px;right:5px;color: white;font-size: 10px;line-height:10px;position: absolute; display:none}
+.opaque {opacity: 0.3;}
+
+.mode:not(.Home) .icon.Home {display:none}
+.mode.Home .icon.text{display:none}
+.mode:not(.Away) .icon.Away {display:none}
+.mode.Away .icon.text{display:none}
+.mode:not(.Night) .icon.Night {display:none}
+.mode.Night .icon.text{display:none}
+.icon, .icon * {text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);}
+
+/*******/
+.r45 {
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg)
+}
+
+/* SLIDER **********/
+.ui-slider-track.ui-mini {height:3px;}
+.ui-slider-popup { /*do not change*/height:12px;width:18px;padding-top:0px;padding-bottom:2px;font-size:12px;}
+div.ui-slider{height:21px;}
+.ui-slider-track{margin:0!important}
+.full-width-slider {position:absolute;bottom:5px;width:100%;}
+.full-width-slider input {display: none;}
+.ui-slider-track.ui-mini .ui-slider-handle {height:20px;width:20px;margin:-11px 0 0 -11px;}
+.ui-slider.ui-mini{padding:0 10px 0 12px;}
+.ui-slider-handle.ui-btn.ui-shadow {background-color:white; 
+box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+/*********/
+.batt {content : "";background-image: url("battery.png"); background-size: 16px 16px; background-repeat: no-repeat;background-position:center center;}
+.batt:before {content: "\0000a0"}
+/** music ****/
+
+.music .ui-slider.ui-mini{padding:0 10px 0 40px;}
+.music .footer {bottom: 14px; z-index:100}
+.music .full-width-slider {z-inndex:99}
+
+.music.muted .unmuted {display:none}
+.music:not(.muted) .muted {display:none}
+
+.music.active .play {display:none}
+.music:not(.active) .pause {display:none}
+
+.music i {cursor: pointer;}
