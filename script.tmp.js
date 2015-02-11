@@ -1,4 +1,4 @@
-var scriptVersion = "4.6";
+var scriptVersion = "4.6.0";
 
 $(function() {
 	
@@ -21,6 +21,9 @@ $(function() {
 	$(".dashboard").click(function(e) {
 		animateClick($(this));
 		e.stopImmediatePropagation();
+		//if (("standalone" in window.navigator) && window.navigator.standalone) {
+			e.preventDefault();
+		//}
 		$(".refresh .icon").addClass("fa-spin");
 		window.location = $(this).find("a").attr("href");
 	});
