@@ -38,7 +38,7 @@ $(function() {
 	
 	$(".dashboard a").click(function(e) {
 		alert("at a");
-	}
+	});
 	
 	$(".switch, .light, .lock, .momentary, .holiday, .camera").click(function() {
 		$(this).closest(".tile").toggleClass("active");
