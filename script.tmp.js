@@ -26,14 +26,19 @@ $(function() {
 	});
 	
 	$(".dashboard").click(function(e) {
+		alert("at tile");
 		animateClick($(this));
 		e.stopImmediatePropagation();
+		e.preventDefault();
 		//if (("standalone" in window.navigator) && window.navigator.standalone) {
-			e.preventDefault();
 		//}
 		$(".refresh .icon").addClass("fa-spin");
 		window.location = $(this).find("a").attr("href");
 	});
+	
+	$(".dashboard a").click(function(e) {
+		alert("at a");
+	}
 	
 	$(".switch, .light, .lock, .momentary, .holiday, .camera").click(function() {
 		$(this).closest(".tile").toggleClass("active");
