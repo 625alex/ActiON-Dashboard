@@ -61,8 +61,9 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 .wtfcloud .icon.cloud {margin-left: -100px;font-size: 200px;color:white;}
 .wtfcloud .icon.message {margin-left:-50px;margin-top: -65px;color:grey;}
 
+.weather .icon i {font-size: 0.9em;}
 /* tiles *************************/
-.title {font-size:0.9em;line-height:1em;height:2em;overflow:ellipsis;position:absolute;top:5px;left:5px}
+.title {font-size:0.9em;line-height:1em;height:2em;overflow:ellipsis;position:absolute;top:2px;left:4px}
 .title2 {font-size: 12px}
 
 /** icons **/
@@ -102,7 +103,7 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 .ui-slider-popup { /*do not change*/height:12px;width:18px;padding-top:0px;padding-bottom:2px;font-size:12px;}
 div.ui-slider{height:21px;}
 .ui-slider-track{margin:0!important}
-.full-width-slider {position:absolute;bottom:5px;width:100%;}
+.full-width-slider {position:absolute;bottom:-2px;width:100%;}
 .full-width-slider input {display: none;}
 .ui-slider-track.ui-mini .ui-slider-handle {height:20px;width:20px;margin:-11px 0 0 -11px;}
 .ui-slider.ui-mini{padding:0 10px 0 12px;}
@@ -117,7 +118,7 @@ box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 
 /** music ****/
 
 .music .ui-slider.ui-mini{padding:0 10px 0 40px;}
-.music .footer {bottom: 14px; z-index:100}
+.music .footer {bottom: 6px; z-index:100}
 .music .full-width-slider {z-inndex:99}
 
 .music.muted .unmuted {display:none}
