@@ -78,7 +78,7 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 .footer {bottom: 5px;color: white;font-size: 11px;left: 5px;position: absolute;line-height:10px;}
 .footer.right {right:5px;text-align:right;}
 .footer i {font-size:16px}
-.spinner {bottom: 5px;right:5px;color: white;font-size: 10px;line-height:10px;position: absolute; display:none}
+.spinner {bottom: 2px;right:2px;color: white;font-size: 10px;line-height:10px;position: absolute; display:none}
 .opaque {opacity: 0.3;}
 
 .mode:not(.Home) .icon.Home {display:none}
