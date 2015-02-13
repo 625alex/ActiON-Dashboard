@@ -1,4 +1,4 @@
-.version-4-6-3 {}
+.version-4-6-3 {display: none}
 
 .tile {background-color: grey}
 .weather {background-color: #a20025;}
@@ -6,7 +6,7 @@
 .presence {background-color: #3f51b5;}/*indigo*/
 .lock {background-color: #f44336;/*red*/}
 .hello-home {background-color: #9c27b0;}/*purple*/
-.switch, .dimmer, .momentary, .light, .dimmerLight {background-color: #4caf50;} /*green*/
+.switch, .dimmer, .momentary, .light, .dimmerLight, .themeLight {background-color: #4caf50;} /*green*/
 .contact {background-color: #e91e63;}/*pink*/
 .refresh {background-color: #607d8b;} /*blue gray*/
 .temperature {background-color: #ff6f00;} /*amber 900*/
