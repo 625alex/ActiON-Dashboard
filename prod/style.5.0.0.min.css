@@ -36,7 +36,9 @@
 body {background-color: #1d1d1d!important;}
 .tile {border-radius:2px;color:white}
 .tiles {margin:2px;}
-.switch, .dimmer, .dimmerLight, .momentary, .clock, .lock, .refresh, .link, .dashboard, .menu, .thermostat, .music i, .themeLight, .camera, .light {cursor: pointer;}
+.switch, .dimmer, .dimmerLight, .momentary, .clock, .lock, .refresh, .link, .dashboard, .menu,
+.thermostatHeat .icon.up, .thermostatHeat .icon.down,
+.music i, .themeLight, .camera, .light {cursor: pointer;}
 .tiles {overflow:hidden}
 .tile {width: 120px; height: 120px;}
 .w2 {width: 240px;}
