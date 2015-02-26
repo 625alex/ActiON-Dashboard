@@ -22,34 +22,25 @@
 .battery {background-color: #954469}
 .camera{background-color: #cddc39} /*lime*/
 .video {background-color:#8E8E8E} /*dropcam grey*/
-.blank.tile{background:none;}
+.blank.tile{background:none!important}
 .dashboard {background-color: #FE0002;} /* red */
 .thermostatHeat{background-color: #FF9900} /*amber*/
 .thermostatCool{background-color: #6600CC} /*violet-blue*/
 
-.dimmer .ui-slider-bg.ui-btn-active, .music .ui-slider-bg.ui-btn-active {background-color:grey;}
-.dimmerLight .ui-slider-bg.ui-btn-active, .music .ui-slider-bg.ui-btn-active {background-color:grey;}
-.dimmer.active .ui-slider-bg.ui-btn-active {background-color:#81c784;}
-.dimmerLight.active .ui-slider-bg.ui-btn-active {background-color:#81c784;}
-.music.active .ui-slider-bg.ui-btn-active {background-color:#ab47bc;}
-
-body {background-color: #1d1d1d!important;}
 .tile {border-radius:2px;color:white}
+.tiles {overflow:hidden}
 .tiles {margin:2px;}
+
 .switch, .dimmer, .dimmerLight, .momentary, .clock, .lock, .refresh, .link, .dashboard, .menu,
 .thermostatHeat .icon.up, .thermostatHeat .icon.down,
 .music i, .themeLight, .camera, .light {cursor: pointer;}
-.tiles {overflow:hidden}
-.tile {width: 120px; height: 120px;}
-.w2 {width: 240px;}
-.h2 {height:240px;}
 
 /* reset ***********************/
-body, .ui-page{background-color:black!important;}
+body, .ui-page{background-color:black}
 * {text-shadow:none;font-family:"Mallanna",Verdana,Arial,Helvetica,sans-serif}
 .ui-overlay-a {text-shadow:none}
 .ui-li-static.ui-body-inherit {text-align:center; cursor:pointer;}
-.ui-slider-track.ui-corner-all {border-radius: 1em;}
+
 
 .ui-shadow-inset{box-shadow:none!important}
 .ui-controlgroup, fieldset.ui-controlgroup{margin:0;}
@@ -106,6 +97,18 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 }
 
 /* SLIDER **********/
+.ui-page-theme-a .ui-bar-inherit {background-color:grey;}
+
+.ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:white;}
+.ui-slider-handle.ui-btn.ui-shadow {background-color:white;}
+
+.ui-slider-handle.ui-btn.ui-shadow {box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.ui-page-theme-a .ui-bar-inherit {border:none;}
+.ui-slider-track.ui-corner-all {border-radius: 1em;}
 .ui-slider-track.ui-mini {height:3px;}
 .ui-slider-popup { /*do not change*/height:12px;width:18px;padding-top:0px;padding-bottom:2px;font-size:12px;}
 div.ui-slider{height:21px;}
@@ -114,11 +117,7 @@ div.ui-slider{height:21px;}
 .full-width-slider input {display: none;}
 .ui-slider-track.ui-mini .ui-slider-handle {height:20px;width:20px;margin:-11px 0 0 -11px;}
 .ui-slider.ui-mini{padding:0 10px 0 12px;}
-.ui-slider-handle.ui-btn.ui-shadow {background-color:white; 
-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
--webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
--moz-box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
-}
+
 /*********/
 .batt {content : "";background-image: url("battery.png"); background-size: 16px 16px; background-repeat: no-repeat;background-position:center center;}
 .batt:before {content: "\0000a0"}
@@ -135,3 +134,36 @@ box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 
 .music:not(.active) .pause {display:none}
 
 .music i {cursor: pointer;}
+/*  THEMES */
+/* slate */
+.theme-slate .tile {background-color:#333333}
+.theme-slate  .ui-slider-handle.ui-btn.ui-shadow {background-color:blue}
+
+.tile.water.active .icon i.active {color: blue}
+.tile.presence.active .icon i.active {color: blue}
+.tile.light.active .icon i.active {color: blue}
+.tile.dimmerLight.active .icon i.active {color: blue}
+.tile.switch.active .icon i.active {color: blue}
+.tile.dimmerSwitch.active .icon i.active {color: blue}
+.tile.motion.active .icon i.active {color: blue}
+
+.tile.lock.inactive .icon i.inactive {color: blue}
+
+/* slate */
+.theme-quartz .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
+.theme-quartz .tile {background-color:white}
+.theme-quartz * {color: #555}
+
+.theme-quartz .ui-page-theme-a .ui-bar-inherit {background-color:lightGrey;}
+.theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:orange;}
+.theme-quartz .ui-slider-handle.ui-btn.ui-shadow {background-color:orange;}
+
+.tile.water.active .icon i.active {color: orange}
+.tile.presence.active .icon i.active {color: orange}
+.tile.light.active .icon i.active {color: orange}
+.tile.dimmerLight.active .icon i.active {color: orange}
+.tile.switch.active .icon i.active {color: orange}
+.tile.dimmerSwitch.active .icon i.active {color: orange}
+.tile.motion.active .icon i.active {color: orange}
+
+.tile.lock.inactive .icon i.inactive {color: orange}
