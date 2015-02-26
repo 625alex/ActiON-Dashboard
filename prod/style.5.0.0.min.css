@@ -139,13 +139,13 @@ div.ui-slider{height:21px;}
 .theme-slate .tile {background-color:#333333}
 .theme-slate  .ui-slider-handle.ui-btn.ui-shadow {background-color:blue}
 
-.tile.water.active .icon i.active {color: blue}
-.tile.presence.active .icon i.active {color: blue}
-.tile.light.active .icon i.active {color: blue}
-.tile.dimmerLight.active .icon i.active {color: blue}
-.tile.switch.active .icon i.active {color: blue}
-.tile.dimmerSwitch.active .icon i.active {color: blue}
-.tile.motion.active .icon i.active {color: blue}
+.theme-slate .tile.water.active .icon i.active {color: blue}
+.theme-slate .tile.presence.active .icon i.active {color: blue}
+.theme-slate .tile.light.active .icon i.active {color: blue}
+.theme-slate .tile.dimmerLight.active .icon i.active {color: blue}
+.theme-slate .tile.switch.active .icon i.active {color: blue}
+.theme-slate .tile.dimmerSwitch.active .icon i.active {color: blue}
+.theme-slate .tile.motion.active .icon i.active {color: blue}
 
 .tile.lock.inactive .icon i.inactive {color: blue}
 
@@ -158,12 +158,12 @@ div.ui-slider{height:21px;}
 .theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:orange;}
 .theme-quartz .ui-slider-handle.ui-btn.ui-shadow {background-color:orange;}
 
-.tile.water.active .icon i.active {color: orange}
-.tile.presence.active .icon i.active {color: orange}
-.tile.light.active .icon i.active {color: orange}
-.tile.dimmerLight.active .icon i.active {color: orange}
-.tile.switch.active .icon i.active {color: orange}
-.tile.dimmerSwitch.active .icon i.active {color: orange}
-.tile.motion.active .icon i.active {color: orange}
+.theme-slate .tile.water.active .icon i.active {color: orange}
+.theme-slate .tile.presence.active .icon i.active {color: orange}
+.theme-slate .tile.light.active .icon i.active {color: orange}
+.theme-slate .tile.dimmerLight.active .icon i.active {color: orange}
+.theme-slate .tile.switch.active .icon i.active {color: orange}
+.theme-slate .tile.dimmerSwitch.active .icon i.active {color: orange}
+.theme-slate .tile.motion.active .icon i.active {color: orange}
 
 .tile.lock.inactive .icon i.inactive {color: orange}
