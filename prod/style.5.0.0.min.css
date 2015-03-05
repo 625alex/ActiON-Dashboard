@@ -153,12 +153,12 @@ div.ui-slider{height:21px;}
 .theme-quartz .tile.active .icon i.active {color: orange}
 
 /* onyx */
-.theme-quartz .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
-.theme-quartz .tile {background-color:black}
-.theme-quartz * {color: wheat}
+.theme-onyx .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
+.theme-onyx .tile {background-color:black}
+.theme-onyx * {color: wheat}
 
-.theme-quartz .ui-page-theme-a .ui-bar-inherit {background-color:lightGrey;}
-.theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:#555;}
-.theme-quartz .ui-slider-handle.ui-btn.ui-shadow {background-color:#555;}
+.theme-onyx .ui-page-theme-a .ui-bar-inherit {background-color:wheat;}
+.theme-onyx .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:lightGrey;}
+.theme-onyx .ui-slider-handle.ui-btn.ui-shadow {background-color:wheat;}
 
-.theme-quartz .tile.active .icon i.active {color: tomato}
+.theme-onyx .tile.active .icon i.active {color: tomato}
