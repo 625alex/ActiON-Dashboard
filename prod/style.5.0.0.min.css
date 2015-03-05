@@ -146,8 +146,8 @@ div.ui-slider{height:21px;}
 .theme-slate .tile.switch.active .icon i.active {color: blue}
 .theme-slate .tile.dimmerSwitch.active .icon i.active {color: blue}
 .theme-slate .tile.motion.active .icon i.active {color: blue}
-
-.theme-slate .tile.lock.inactive .icon i.inactive {color: blue}
+.theme-slate .tile.lock.active .icon i.inactive {color: blue}
+.theme-slate .tile.contact.active .icon i.inactive {color: blue}
 
 /* slate */
 .theme-quartz .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
@@ -165,5 +165,5 @@ div.ui-slider{height:21px;}
 .theme-quartz .tile.switch.active .icon i.active {color: orange}
 .theme-quartz .tile.dimmerSwitch.active .icon i.active {color: orange}
 .theme-quartz .tile.motion.active .icon i.active {color: orange}
-
-.theme-quartz .tile.lock.inactive .icon i.inactive {color: orange}
+.theme-quartz .tile.contact.active .icon i.active {color: orange}
+.theme-quartz .tile.lock.active .icon i.inactive {color: orange}
