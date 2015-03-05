@@ -153,7 +153,7 @@ div.ui-slider{height:21px;}
 .theme-quartz .tile.active .icon i.active {color: orange}
 
 /* onyx */
-.theme-onyx .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
+.theme-onyx .ui-page.ui-page-theme-a.ui-page-active {background-color:#444;}
 .theme-onyx .tile {background-color:black}
 .theme-onyx * {color: wheat}
 
