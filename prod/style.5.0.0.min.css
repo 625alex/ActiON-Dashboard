@@ -157,8 +157,8 @@ div.ui-slider{height:21px;}
 .theme-onyx .tile {background-color:black}
 .theme-onyx * {color: wheat}
 
-.theme-onyx .ui-page-theme-a .ui-bar-inherit {background-color:wheat;}
-.theme-onyx .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:lightGrey;}
+.theme-onyx .ui-page-theme-a .ui-bar-inherit {background-color:#444;}
+.theme-onyx .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:wheat}
 .theme-onyx .ui-slider-handle.ui-btn.ui-shadow {background-color:wheat;}
 
 .theme-onyx .tile.active .icon i.active {color: tomato}
