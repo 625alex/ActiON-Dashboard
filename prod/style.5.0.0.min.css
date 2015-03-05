@@ -155,7 +155,7 @@ div.ui-slider{height:21px;}
 .theme-quartz * {color: #555}
 
 .theme-quartz .ui-page-theme-a .ui-bar-inherit {background-color:lightGrey;}
-.theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:orange;}
+.theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:#555;}
 .theme-quartz .ui-slider-handle.ui-btn.ui-shadow {background-color:#555;}
 
 .theme-quartz .tile.water.active .icon i.active {color: orange}
