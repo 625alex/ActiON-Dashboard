@@ -138,16 +138,8 @@ div.ui-slider{height:21px;}
 /* slate */
 .theme-slate .tile {background-color:#333333}
 .theme-slate  .ui-slider-handle.ui-btn.ui-shadow {background-color:white}
+.theme-slate .tile.active .icon i.active {color: blue}
 
-.theme-slate .tile.water.active .icon i.active {color: blue}
-.theme-slate .tile.presence.active .icon i.active {color: blue}
-.theme-slate .tile.light.active .icon i.active {color: blue}
-.theme-slate .tile.dimmerLight.active .icon i.active {color: blue}
-.theme-slate .tile.switch.active .icon i.active {color: blue}
-.theme-slate .tile.dimmerSwitch.active .icon i.active {color: blue}
-.theme-slate .tile.motion.active .icon i.active {color: blue}
-.theme-slate .tile.lock.active .icon i.inactive {color: blue}
-.theme-slate .tile.contact.active .icon i.inactive {color: blue}
 
 /* slate */
 .theme-quartz .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
@@ -158,12 +150,15 @@ div.ui-slider{height:21px;}
 .theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:#555;}
 .theme-quartz .ui-slider-handle.ui-btn.ui-shadow {background-color:#555;}
 
-.theme-quartz .tile.water.active .icon i.active {color: orange}
-.theme-quartz .tile.presence.active .icon i.active {color: orange}
-.theme-quartz .tile.light.active .icon i.active {color: orange}
-.theme-quartz .tile.dimmerLight.active .icon i.active {color: orange}
-.theme-quartz .tile.switch.active .icon i.active {color: orange}
-.theme-quartz .tile.dimmerSwitch.active .icon i.active {color: orange}
-.theme-quartz .tile.motion.active .icon i.active {color: orange}
-.theme-quartz .tile.contact.active .icon i.active {color: orange}
-.theme-quartz .tile.lock.active .icon i.inactive {color: orange}
+.theme-quartz .tile.active .icon i.active {color: orange}
+
+/* onyx */
+.theme-quartz .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
+.theme-quartz .tile {background-color:black}
+.theme-quartz * {color: wheat}
+
+.theme-quartz .ui-page-theme-a .ui-bar-inherit {background-color:lightGrey;}
+.theme-quartz .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:#555;}
+.theme-quartz .ui-slider-handle.ui-btn.ui-shadow {background-color:#555;}
+
+.theme-quartz .tile.active .icon i.active {color: tomato}
