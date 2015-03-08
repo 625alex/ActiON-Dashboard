@@ -64,6 +64,7 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 /** icons **/
 .tile.active .icon i.inactive {display:none}
 .tile:not(.active) .icon i.active {display:none}
+.tile.inactive .icon i.inactive {opacity: 0.3;}
 
 .icon {font-size:3em;line-height:3em;width:100%;margin-top: -1.5em;position: absolute;text-align: center;top: 50%;white-space:nowrap;}
 .icon.text {font-size:1.8em;line-height:2em;width:100%;margin-top: -1em;}
@@ -161,4 +162,4 @@ div.ui-slider{height:21px;}
 .theme-onyx .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:wheat}
 .theme-onyx .ui-slider-handle.ui-btn.ui-shadow {background-color:wheat;}
 
-.theme-onyx .tile.active .icon i.active {color: SpringGreen}
+.theme-onyx .tile.active .icon i.active {color: firebrick}
