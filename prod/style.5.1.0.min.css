@@ -167,8 +167,8 @@ div.ui-slider{height:21px;}
 
 /* cobalt */
 .theme-cobalt .ui-page.ui-page-theme-a.ui-page-active {background-color:black}
-.theme-cobalt .tile {background-color:#212d50}
 .theme-cobalt .tile.active {background-color:#324b6e}
+.theme-cobalt .tile, .theme-cobalt .tile.momentary, .theme-cobalt .tile.camera  {background-color:#212d50}
 .theme-cobalt * {color: white}
 
 .theme-cobalt .ui-page-theme-a .ui-bar-inherit {background-color:black;}
