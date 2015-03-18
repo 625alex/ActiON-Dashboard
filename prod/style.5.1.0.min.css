@@ -143,7 +143,7 @@ div.ui-slider{height:21px;}
 .theme-slate .tile.active .icon i.active {color: blue}
 
 
-/* slate */
+/* quartz */
 .theme-quartz .ui-page.ui-page-theme-a.ui-page-active {background-color:lightGrey}
 .theme-quartz .tile {background-color:white}
 .theme-quartz * {color: #555}
@@ -164,3 +164,14 @@ div.ui-slider{height:21px;}
 .theme-onyx .ui-slider-handle.ui-btn.ui-shadow {background-color:wheat;}
 
 .theme-onyx .tile.active .icon i.active {color: firebrick}
+
+/* cobalt */
+.theme-cobalt .ui-page.ui-page-theme-a.ui-page-active {background-color:black}
+.theme-cobalt .tile {background-color:#324B6E}
+.theme-cobalt * {color: white}
+
+.theme-cobalt .ui-page-theme-a .ui-bar-inherit {background-color:black;}
+.theme-cobalt .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:white;}
+.theme-cobalt .ui-slider-handle.ui-btn.ui-shadow {background-color:white;}
+
+.theme-cobalt .tile.active .icon i.active {color: #61A3AF}
