@@ -167,11 +167,13 @@ div.ui-slider{height:21px;}
 
 /* cobalt */
 .theme-cobalt .ui-page.ui-page-theme-a.ui-page-active {background-color:black}
-.theme-cobalt .tile {background-color:#324B6E}
+.theme-cobalt .tile {background-color:#212d50}
+.theme-cobalt .tile.active {background-color:#324b6e}
 .theme-cobalt * {color: white}
 
 .theme-cobalt .ui-page-theme-a .ui-bar-inherit {background-color:black;}
 .theme-cobalt .ui-page-theme-a .ui-slider-track .ui-btn-active {background-color:white;}
 .theme-cobalt .ui-slider-handle.ui-btn.ui-shadow {background-color:white;}
 
-.theme-cobalt .tile.active .icon i.active {color: #61A3AF}
+.theme-cobalt .tile .icon i {color: #AFCAD5}
+.theme-cobalt .tile.active .icon i.active {color: white}
