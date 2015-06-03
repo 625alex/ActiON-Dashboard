@@ -1,3 +1,3 @@
 This is a residual repository to host files for legacy installations.
 
-The project has been moved to https://github.com/625alex/SmartTiles
+The new home page for this project is http://smarttiles.click
